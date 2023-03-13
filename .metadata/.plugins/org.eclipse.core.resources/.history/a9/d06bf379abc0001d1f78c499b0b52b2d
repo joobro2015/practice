@@ -1,0 +1,22 @@
+package com.newlecture.web.controller.customer;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+//view를 가지고있는 jsp를 사용할땐 controller로 어노테이션을 줘야한다. @RestController는 모든것을 문자열로? 반환?
+@Controller
+public class NoticeController {
+	
+	@RequestMapping("/customer/notice/list")
+	public String list() {
+	
+	return "list.jsp";
+	}
+	
+	
+	@RequestMapping("/customer/notice/detail")
+	public String detail() {
+	
+	return "detail.jsp";
+	}
+}
